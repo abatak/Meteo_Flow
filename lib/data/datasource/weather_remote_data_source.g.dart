@@ -1,0 +1,98 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'weather_remote_data_source.dart';
+
+// **************************************************************************
+// RiverpodGenerator
+// **************************************************************************
+
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint, type=warning
+
+@ProviderFor(dio)
+final dioProvider = DioProvider._();
+
+final class DioProvider extends $FunctionalProvider<Dio, Dio, Dio>
+    with $Provider<Dio> {
+  DioProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'dioProvider',
+        isAutoDispose: true,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$dioHash();
+
+  @$internal
+  @override
+  $ProviderElement<Dio> $createElement($ProviderPointer pointer) =>
+      $ProviderElement(pointer);
+
+  @override
+  Dio create(Ref ref) {
+    return dio(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(Dio value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<Dio>(value),
+    );
+  }
+}
+
+String _$dioHash() => r'a03da399b44b3740dc4fcfc6716203041d66ff01';
+
+@ProviderFor(weatherRemoteDataSource)
+final weatherRemoteDataSourceProvider = WeatherRemoteDataSourceProvider._();
+
+final class WeatherRemoteDataSourceProvider
+    extends
+        $FunctionalProvider<
+          WeatherRemoteDataSource,
+          WeatherRemoteDataSource,
+          WeatherRemoteDataSource
+        >
+    with $Provider<WeatherRemoteDataSource> {
+  WeatherRemoteDataSourceProvider._()
+    : super(
+        from: null,
+        argument: null,
+        retry: null,
+        name: r'weatherRemoteDataSourceProvider',
+        isAutoDispose: true,
+        dependencies: null,
+        $allTransitiveDependencies: null,
+      );
+
+  @override
+  String debugGetCreateSourceHash() => _$weatherRemoteDataSourceHash();
+
+  @$internal
+  @override
+  $ProviderElement<WeatherRemoteDataSource> $createElement(
+    $ProviderPointer pointer,
+  ) => $ProviderElement(pointer);
+
+  @override
+  WeatherRemoteDataSource create(Ref ref) {
+    return weatherRemoteDataSource(ref);
+  }
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(WeatherRemoteDataSource value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<WeatherRemoteDataSource>(value),
+    );
+  }
+}
+
+String _$weatherRemoteDataSourceHash() =>
+    r'964ee78c4e23c5c196fc2e0c0d9d95238983d64e';
