@@ -8,9 +8,6 @@ import 'package:sqflite/sqflite.dart';
 import 'package:meteo_flow/data/database/local_database_provider.dart';
 
 void main() async {
-  //* Everything which is not apart of Dart language and is external
-  //* we need to call this line (e.g Firebase,database,Serverpod, internet connection...)
-  //* 'WidgetsFlutterBinding.ensureInitialized()' is bridge between Dart and NativeOS
   WidgetsFlutterBinding.ensureInitialized();
 
   // Create a temporary container just to read the async configuration
@@ -27,7 +24,6 @@ void main() async {
   runApp(
     ProviderScope(
       overrides: [
-        //  Inject the live SQLite instance into your synchronous database provider
         databaseProvider
             .overrideWithValue(
               sqlDatabase,
