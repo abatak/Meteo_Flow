@@ -4,7 +4,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 part 'network_info.g.dart';
 
 abstract class NetworkInfo {
-  Future<bool>? get isConnected;
+  Future<bool> get isConnected;
 }
 
 class NetworkInfoImpl
@@ -17,7 +17,7 @@ class NetworkInfoImpl
   });
 
   @override
-  Future<bool>? get isConnected =>
+  Future<bool> get isConnected =>
       connectionChecker.hasConnection;
 }
 
