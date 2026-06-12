@@ -32,7 +32,7 @@ class WeatherRepositoryImpl
     required WeatherParams params,
   }) async {
     if (await networkInfo
-        .isConnected!) {
+        .isConnected) {
       try {
         //  Fetch the latest weather conditions from the internet API
         final remoteSource =
